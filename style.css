@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
 
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -7,8 +13,8 @@
 }
 
 body{
-    background-color: hsl(47, 88%, 63%);
-    font-family: 'Figtree', 'sans-serif';
+    background-color: yellow;
+    font-family: 'Figtree', sans-serif;
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -16,10 +22,10 @@ body{
     justify-content: space-between;
 }
 .card{
-    background-color: hsl(0, 0%, 100%);
+    background-color: white;
     border-style: solid;
     border-width: thin;
-    font-size: 16px;
+    font-size: clamp(14px, 1.5vw, 16px);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 8px 8px 0px black;
@@ -44,7 +50,7 @@ body{
 }
 
 .type{
-    background-color: hsl(47, 88%, 63%);
+    background-color: yellow;
     display: inline-block;
     width: fit-content;
     padding: 7px;
@@ -59,16 +65,16 @@ body{
 h1{
     font-weight: 800;
     display: block;
-    font-size: 16px;
+    font-size: clamp(14px, 1.5vw, 16px);
 }
 
 
 h1:hover{
-    color: hsl(47, 88%, 63%);
+    color: yellow;
 }
 
 .main-contnet{
-    color: hsl(0, 0%, 42%);
+    color: grey;
     font-weight: 500;
 }
 
@@ -81,7 +87,7 @@ h1:hover{
 .avatar{
     width: 35px;
     height: 35px;
-    margin-right: 10px;
+    margin-inline-end: 10px;
 }
 
 footer{
